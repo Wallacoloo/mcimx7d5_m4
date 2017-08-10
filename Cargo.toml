@@ -1,0 +1,16 @@
+[package]
+name = "mcimx7d5_m4"
+version = "0.1.0"
+authors = ["Colin Wallace <colin.wallace@flukenetworks.com>"]
+
+[dependencies]
+bare-metal = "0.1"
+cortex-m = "0.3"
+vcell = "0.1"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3"
+
+[features]
+rt = ["cortex-m-rt"]
